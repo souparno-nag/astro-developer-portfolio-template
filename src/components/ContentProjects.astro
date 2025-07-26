@@ -11,22 +11,22 @@ interface Project {
 };
 
 const projects: Project[] = [{
-    name: 'Papersend.io',
-    description: 'Papersend is the free alternative to DocSend for secure document sharing, tracking, and Data Rooms. Customize branding, control access, and protect your documents.',
+    name: 'Task Tracker CLI',
+    description: 'A task tracker CRUD app built to work on the terminal',
     link: {
-        url: 'https://papersend.io/',
+        url: 'https://github.com/souparno-nag/task-tracker-cli.git',
     }
 }, {
-    name: 'Qivi.io',
-    description: 'Qivi is an all-in-one application designed to streamline business operations, enhance productivity, and maximize success. Data security is a priority.',
+    name: 'Gemini clone',
+    description: 'A Gemini clone built using NextJS',
     link: {
-        url: 'https://qivi.io/'
+        url: 'https://github.com/souparno-nag/gemini-clone.git'
     }
 }, {
-    name: 'TECHPOINT.de',
-    description: 'TECHPOINT is a local IT service provider based in the Starnberg district and the Fünfseenland region, specializing in delivering reliable and modern IT solutions.',
+    name: 'Stockle',
+    description: 'Enterprise management software, built on an accessible website',
     link: {
-        url: 'https://techpoint.de/'
+        url: 'https://github.com/souparno-nag/Stockle.git'
     }
 }];
 ---
@@ -63,7 +63,7 @@ const projects: Project[] = [{
                                 hover:text-primary
                                 hover:border-primary
                             ">
-                            {project.link.buttonLabel || 'Open Project Website'}
+                            {project.link.buttonLabel || 'Open Github Link'}
                         </a>
                     : null
                 }

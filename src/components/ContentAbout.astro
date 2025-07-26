@@ -7,60 +7,39 @@ const code = `interface Developer {
     interests: string[];
 };
 
-interface TechStack {
-    devOps: string[];
-    backend: string[];
-   frontend: string[];
-};
-
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
-
 const techStack: TechStack = {
     devOps: [
-        'GitLab',
         'GitHub',
         'Cloudflare',
         'Docker'
     ],
     frontend: [
-        'Angular',
+        'NextJS',
         'JavaScript',
         'TypeScript',
         'TailwindCSS',
-        'PrimeNG',
+        'ReactJS',
         'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
         'Markdown',
-        'WordPress'
     ],
     backend: [
-        'Supabase',
+        'FastAPI',
         'Node.js',
-        'Bun',
-        'Deno',
+        'Django',
+        'Flask',
         'PostgreSQL',
         'MySQL',
-        'S3 Storage',
-        'Resend'
+        'MongoDB'
     ]
 };
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
-    skills: [
-        ...techStack.devOps,
-        ...techStack.backend,
-        ...techStack.frontend
-    ],
+    name: 'Souparno Nag.',
     interests: [
         'Open Source',
         'Security',
-        'Privacy',
-        'Performance',
+        'GenAI',
         'Self-Hosting',
         'Networking'
     ]
@@ -71,14 +50,10 @@ const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
             return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
         case 'linkedIn':
             return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
         case 'email':
-            return 'hi@devidev.io';
+            return 'souparno.nag2023@vitstudent.ac.in';
         default:
             return 'Send fax.';
     }
